@@ -1,7 +1,0 @@
-student_id,section,hours_studied,preferred_topic,attendance
-1,A,2,graphs,Present
-2,A,4,data cleaning,Present
-3,B,1,wrangling,Absent
-4,B,3,graphs,Present
-5,A,5,quarto,Present
-6,B,2,data cleaning,Present
