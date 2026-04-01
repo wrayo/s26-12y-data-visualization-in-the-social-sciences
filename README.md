@@ -208,8 +208,8 @@ I am actively doing research in this arena because I think AI has the potential 
 
 **Why not?** LLMs (large language models) work by predicting likely next words based on patterns in human writing, not by knowing facts or what any of those words mean. As a result, they can sound confident while still being wrong.
 
-- Visual explanation if you are curious
-- Deeper dive by 3Blue1Brown: *Transformers, the tech behind LLMs | Deep Learning Chapter 5*
+- [Visual explanation if you are curious](https://poloclub.github.io/transformer-explainer/)
+- [Deeper dive by 3Blue1Brown: *Transformers, the tech behind LLMs | Deep Learning Chapter 5*](https://www.youtube.com/watch?v=wjZofJX0v4M)
 
 LLMs can and often do give you the wrong answer. Ask AI to explain a topic you know very well and you will likely spot a bunch of incorrect details; this is called hallucination.
 
