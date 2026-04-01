@@ -67,7 +67,7 @@ The laboratory and tutorial portions of this course require the statistical prog
 
 - `R` - <https://cran.r-project.org/>
 - `RStudio` - <https://posit.co/download/rstudio-desktop/>
-- `Quarto` - <https://quarto.org/>
+- `Quarto` - is bundled with `RStudio`
 
 We will use the `tidyverse` from the beginning of the course, and later in the quarter we will also use introductory text-analysis tools such as `tidytext`. Instructions for installing any required packages will be provided in the weekly tutorials.
 
