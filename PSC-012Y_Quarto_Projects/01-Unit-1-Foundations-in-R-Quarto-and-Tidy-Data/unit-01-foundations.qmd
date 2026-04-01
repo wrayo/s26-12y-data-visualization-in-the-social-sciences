@@ -1,0 +1,53 @@
+---
+title: "PSC-012Y Unit 1: Foundations in R, Quarto, and Tidy Data"
+format:
+  html:
+    embed-resources: true
+---
+
+## Syllabus Alignment
+
+- **Lecture date:** April 3, 2026
+- **Tutorial date:** April 6, 2026
+- **Lab date:** April 8, 2026
+- **Statistical concept:** Units of observation, variables, research questions, tidy data
+- **Programming concept:** `read_csv()`, `glimpse()`, `select()`, `filter()`, first `ggplot()`
+
+## Goals
+
+- Open a project in RStudio.
+- Render a Quarto document.
+- Read a CSV from the local `data/` folder.
+- Identify rows, columns, and variable types.
+
+## Local Data Check
+
+```{r}
+unit1_data <- read.csv("data/student_checkins.csv", stringsAsFactors = FALSE)
+unit1_data
+table(unit1_data$attendance)
+summary(unit1_data$hours_studied)
+```
+
+## Tidyverse Starter
+
+```{r}
+#| eval: false
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+student_checkins <- read_csv("data/student_checkins.csv")
+
+student_checkins |>
+  filter(attendance == "Present") |>
+  select(student_id, section, preferred_topic)
+
+student_checkins |>
+  ggplot(aes(x = preferred_topic)) +
+  geom_bar()
+```
+
+## Notes
+
+Use this file as the starting point for lecture examples, tutorial notes, or the first lab activity.

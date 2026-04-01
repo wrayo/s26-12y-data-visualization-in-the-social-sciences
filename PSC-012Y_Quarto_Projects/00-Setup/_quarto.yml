@@ -1,0 +1,16 @@
+project:
+  title: "PSC-012Y Setup"
+  type: default
+  output-dir: output
+  render:
+    - psc012y-setup.qmd
+    - RInstallGuide.qmd
+    - Unit_0-setup.qmd
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+
+editor: visual

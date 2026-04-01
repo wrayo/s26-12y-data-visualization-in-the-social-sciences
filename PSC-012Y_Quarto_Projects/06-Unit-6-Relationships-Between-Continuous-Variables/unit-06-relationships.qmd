@@ -1,0 +1,47 @@
+---
+title: "PSC-012Y Unit 6: Relationships Between Continuous Variables"
+format:
+  html:
+    embed-resources: true
+---
+
+## Syllabus Alignment
+
+- **Lecture date:** May 15, 2026
+- **Tutorial date:** May 18, 2026
+- **Lab date:** May 20, 2026
+- **Statistical concept:** Association, trend, correlation, regression as line-of-best-fit intuition
+- **Programming concept:** Scatterplots, `geom_smooth(method = "lm")`, `cor()`, simple `lm()` output reading
+
+## Goals
+
+- Visualize the relationship between two continuous variables.
+- Interpret correlation direction and strength.
+- Use a simple linear model as a descriptive tool.
+
+## Local Data Check
+
+```{r}
+unit6_data <- read.csv("data/screen_time_and_focus.csv")
+cor(unit6_data$screen_time_hours, unit6_data$assignment_grade)
+summary(lm(assignment_grade ~ screen_time_hours, data = unit6_data))
+```
+
+## Tidyverse Starter
+
+```{r}
+#| eval: false
+library(readr)
+library(ggplot2)
+
+focus_data <- read_csv("data/screen_time_and_focus.csv")
+
+focus_data |>
+  ggplot(aes(x = screen_time_hours, y = assignment_grade)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+## Notes
+
+Use this notebook to draft scatterplots, correlation write-ups, and introductory regression interpretation.

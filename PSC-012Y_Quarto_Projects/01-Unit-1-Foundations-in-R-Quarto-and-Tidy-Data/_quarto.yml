@@ -1,0 +1,14 @@
+project:
+  title: "PSC-012Y Unit 1"
+  type: default
+  output-dir: output
+  render:
+    - unit-01-foundations.qmd
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+
+editor: visual

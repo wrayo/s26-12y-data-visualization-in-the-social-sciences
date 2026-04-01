@@ -1,0 +1,14 @@
+project:
+  title: "PSC-012Y Unit 2"
+  type: default
+  output-dir: output
+  render:
+    - unit-02-wrangling.qmd
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+
+editor: visual

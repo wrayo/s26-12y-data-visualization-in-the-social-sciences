@@ -1,0 +1,14 @@
+project:
+  title: "PSC-012Y Unit 5"
+  type: default
+  output-dir: output
+  render:
+    - unit-05-group-comparisons.qmd
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+
+editor: visual

@@ -1,0 +1,39 @@
+---
+title: "PSC-012Y Setup"
+format:
+  html:
+    embed-resources: true
+---
+
+## Syllabus Alignment
+
+- **Phase:** Setup
+- **Date:** April 1, 2026
+- **Statistical concept:** Orientation to course tools and workflow
+- **Programming concept:** Local `R` / `RStudio` / `Quarto` installation or Posit Cloud setup
+
+## Setup Checklist
+
+- Confirm that `R` opens successfully.
+- Confirm that `RStudio` opens successfully.
+- Confirm that `quarto check` runs without errors.
+- Confirm that this document renders.
+- Install the packages most likely to be used early in the quarter.
+
+## Basic Render Check
+
+```{r}
+1 + 1
+sessionInfo()
+```
+
+## Optional Package Installation
+
+```{r}
+#| eval: false
+install.packages(c("tidyverse", "tidytext", "janitor"))
+```
+
+## Notes
+
+Use the `notes/` folder to keep short records about anything that needed troubleshooting during setup.
